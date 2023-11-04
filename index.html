@@ -1,1 +1,561 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mikro Projekt</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <header>
+        <p id="choosePlanet">Wybierz obiekt</p>
+        <p class="przyciskStronaGlowna" id="mainPageButton">Wróć na stronę główną</p>
+    </header>
+        <main>
+            <div class="sekcja_main_lewy_div" id="quizSun">
+                <form id="quiz-form">
+                    <p>Pytanie 1: Kiedy uformowało się Słońce?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> 4,567 mld lat temu
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> 4,000 mld lat temu
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Jaką średnice ma Słońce?</p>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> 1 392 684 km
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> 5 000 000 km
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Jak blisko Słońca jest czerwony karzeł Proxima Centauri?</p>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> 17 lat świetlnych
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> 71 lat świetlnych
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizMercury">
+                <form id="quiz-form2">
+                    <p>Pytanie 1: Jaka temperatura panuje na powierzchni?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> od −173 °C do 427 °C
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> od 0 °C do 35 °C
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Kiedy po raz pierwszy udokumentowano obserwację Merkurego?</p>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> W 1213r
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> Pierwszego tysiąclecia p.n.e.
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Kim był Merkury według Rzymian?</p>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> Patron kierowców
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> Patron handlarzy
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers2">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizVenus">
+                <form id="quiz-form3">
+                    <p>Pytanie 1: Jak zmienia się odległość Wenus od Ziemii?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> od około 40 mln km do około 259 mln km
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> od około 10 mln km do około 659 mln km
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Jak klasyfikowana jest Wenus?</p>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> Jako planeta skalista
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> Jako gazowy olbrzym
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Czy stwierdzono na Wenus ślady życia?</p>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> Tak
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> Nie
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers3">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizEarth">
+                <form id="quiz-form4">
+                    <p>Pytanie 1: Czy stwierdzono na Ziemii życie?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> Tak
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> Nie
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Kiedy planeta się uformowała?</p>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> ok. 1,54 ± 0,15 mld lat temu
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> ok. 4,54 ± 0,05 mld lat temu
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Jaką część powierzchni zajmuje woda?</p>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> 97%
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> 70,8%
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers4">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizMars">
+                <form id="quiz-form5">
+                    <p>Pytanie 1: Ile trwa doba na Marsie?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> 24 h 37 m 22 s
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> 44 h 17 m 12 s
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Jak nazywają się księżyce Marsa?</p>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> Fobos i Deimos
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> Cerber i Fiona
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: W którym roku sonda Mariner 4 przeleciała obok Marsa?</p>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> w 1965 roku
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> w 1695 roku
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers5">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizJupiter">
+                <form id="quiz-form6">
+                    <p>Pytanie 1: Czy Jowisz jest gazowym olbrzymem?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> Tak
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> Nie
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Jaki jest stosunek wodoru do helu na Jowiszu?</p>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> 3:1
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> 1:1
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Jak nazywa się sonda krążąca dookoła Jowisza?</p>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> Granit
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> Juno
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers6">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizSaturn">
+                <form id="quiz-form7">
+                    <p>Pytanie 1: Która w kolejności jest to planetu układu słonecznego?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> szósta
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> druga
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Ile Saturn ma satelitów?</p>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> 416
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> 146
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Z jaką prędkościa wieją wiatry na Saturnie?</p>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> ok. 100 km/h
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> ok. 1800 km/h
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers7">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizUranus">
+                <form id="quiz-form8">
+                    <p>Pytanie 1: Ile wynosi minimalna temperatura na Uranie?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> 49 K
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> 273,15 K
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Z czego składa się wnętrze Urana?</p>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> Głównie z diamentów i złota
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> Głównie z lodów i skał.
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Jaką prędkość mogą mieć wiatry na Uranie?</p>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> 9000 km/h
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> 900 km/h
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers8">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizNeptune">
+                <form id="quiz-form9">
+                    <p>Pytanie 1: Ile razy Neptun jest masywniejszy niż Ziemia?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> 17 razy
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> 25 razy
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: Jaką inną planetę przypomina Neptun?</p>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> Uran
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> Ziemię
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: Jaka jest temperatura w centrum planety?</p>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> -50 °C
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> 5100 °C
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers9">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <div class="sekcja_main_lewy_div" id="quizPluto">
+                <form id="quiz-form10">
+                    <p>Pytanie 1: Jakie jest oficjalne oznaczenie Plutona?</p>
+                    <label>
+                        <input type="radio" name="question1" value="correct"> (134340) Pluton
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question1" value="incorrect"> (420512) Pluton
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 2: W którym roku został odkryty Pluton?</p>
+                    <label>
+                        <input type="radio" name="question2" value="correct"> w 1930 roku
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question2" value="incorrect"> w 2015 roku
+                    </label>
+                    <br>
+                    <br>
+
+                    <p>Pytanie 3: W którym roku Pluton przestał być planetą?</p>
+                    <label>
+                        <input type="radio" name="question3" value="incorrect"> w 1946 roku
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question3" value="correct"> w 2006 roku
+                    </label>
+                    <br>
+                    <br>
+                    <button type="button" id="check-answers10">Sprawdź odpowiedzi</button>
+                </form>
+            </div>
+
+            <article class="sekcja_main_prawy_div" id="index">
+                <p class="napisMenu" id="slonceNapis">SŁOŃCE</p>
+                <p class="napisMenu" id="mercuryNapis">MERKURY</p>
+                <p class="napisMenu" id="venusNapis">WENUS</p>
+                <p class="napisMenu" id="earthNapis">ZIEMIA</p>
+                <p class="napisMenu" id="marsNapis">MARS</p>
+                <p class="napisMenu" id="jupiterNapis">JOWISZ</p>
+                <p class="napisMenu" id="saturnNapis">SATURN</p>
+                <p class="napisMenu" id="uranusNapis">URAN</p>
+                <p class="napisMenu" id="neptuneNapis">NEPTUN</p>
+                <p class="napisMenu" id="plutoNapis">PLUTON</p>
+
+                <div class="sun" id="sunButton" onmouseover="napisAnimacjaPojawienia('slonceNapis')" onmouseout="napisSlonceAnimacjaZnikanie('slonceNapis')">
+                    <img src="Zdjecia/slonce.png" alt="Zdjęcie Słońca">
+                </div>
+                <div class="mercury" id="mercuryButton" onmouseover="napisAnimacjaPojawienia('mercuryNapis')" onmouseout="napisSlonceAnimacjaZnikanie('mercuryNapis')">
+                    <img src="Zdjecia/mercury.png" alt="Zdjęcie Merkurego">
+                </div>
+                <div class="venus" id="venusButton" onmouseover="napisAnimacjaPojawienia('venusNapis')" onmouseout="napisSlonceAnimacjaZnikanie('venusNapis')">
+                    <img src="Zdjecia/venus.png" alt="Zdjęcie Wenus">
+                </div>
+                <div class="earth" id="earthButton" onmouseover="napisAnimacjaPojawienia('earthNapis')" onmouseout="napisSlonceAnimacjaZnikanie('earthNapis')">
+                    <img src="Zdjecia/earth.png" alt="Zdjęcie Ziemii" style="">
+                </div>
+                <div class="mars" id="marsButton" onmouseover="napisAnimacjaPojawienia('marsNapis')" onmouseout="napisSlonceAnimacjaZnikanie('marsNapis')">
+                    <img src="Zdjecia/mars.png" alt="Zdjęcie Marsa">
+                </div>
+                <div class="jupiter" id="jupiterButton" onmouseover="napisAnimacjaPojawienia('jupiterNapis')" onmouseout="napisSlonceAnimacjaZnikanie('jupiterNapis')">
+                    <img src="Zdjecia/jupiter.png" alt="Zdjęcie Jowisza">
+                </div>
+                <div class="saturn" id="saturnButton" onmouseover="napisAnimacjaPojawienia('saturnNapis')" onmouseout="napisSlonceAnimacjaZnikanie('saturnNapis')">
+                    <img src="Zdjecia/saturn.webp" alt="Zdjęcie Saturna">
+                </div>
+                <div class="uranus" id="uranusButton" onmouseover="napisAnimacjaPojawienia('uranusNapis')" onmouseout="napisSlonceAnimacjaZnikanie('uranusNapis')">
+                    <img src="Zdjecia/uranus.png" alt="Zdjęcie Uranu">
+                </div>
+                <div class="neptune" id="neptuneButton" onmouseover="napisAnimacjaPojawienia('neptuneNapis')" onmouseout="napisSlonceAnimacjaZnikanie('neptuneNapis')">
+                    <img src="Zdjecia/neptune.webp" alt="Zdjęcie Neptuna">
+                </div>
+                <div class="pluto" id="plutoButton" onmouseover="napisAnimacjaPojawienia('plutoNapis')" onmouseout="napisSlonceAnimacjaZnikanie('plutoNapis')">
+                    <img src="Zdjecia/pluto.png" alt="Zdjęcie Plutona">
+                </div>
+            </article>
+
+            <section class="sekcja_main_prawy_div" id="slonce">
+                <img src="Zdjecia/slonceGIF.gif" alt="GIF Słońce" class="infoZdjecia">
+                <p class="info">Słońce to gwiazda centralna Układu Słonecznego, wokół której krąży Ziemia, inne planety tego układu, planety karłowate oraz małe ciała Układu Słonecznego. Słońce składa się z gorącej plazmy utrzymywanej przez grawitację i kształtowanej przez pole magnetyczne. Jest prawie idealnie kuliste. Ma średnicę około 1 392 684 km, około 109 razy większą niż Ziemia, a jego masa (1,989 ×1030 kg, około 333 tysiące razy większa niż masa Ziemi (M⊕)) stanowi około 99,86% całkowitej masy Układu Słonecznego. Około trzy czwarte masy Słońca stanowi wodór, resztę głównie hel. Pozostałe 1,69% (co odpowiada około 5600 M🜨) tworzą cięższe pierwiastki, w tym m.in. tlen, węgiel, neon i żelazo.</p>
+                <br>
+                <p class="info">Słońce uformowało się około 4,567 mld lat temu na skutek zapadania grawitacyjnego obszaru w dużym obłoku molekularnym. Większość materii zgromadziła się w centrum, a reszta utworzyła orbitujący wokół niego spłaszczony dysk, z którego ukształtowała się pozostała część Układu Słonecznego. Centralna część stawała się coraz gęstsza i gorętsza, aż w jej wnętrzu rozpoczęła się synteza termojądrowa. Naukowcy sądzą, że niemal wszystkie gwiazdy powstają na skutek tego procesu. Słońce jest typu widmowego G2 V, czyli należy do tzw. żółtych karłów ciągu głównego. Widziane z Ziemi ma barwę białą. Oznaczenie typu widmowego „G2” wiąże się z jego temperaturą efektywną równą 5778 K (5505 °C). Oznaczenie klasy widmowej „V” wskazuje, że Słońce należy do ciągu głównego gwiazd i generuje energię w wyniku fuzji jądrowej, łącząc jądra wodoru w hel. W ciągu sekundy Słońce przetwarza w jądrze około 620 mln ton wodoru.</p>
+                <br>
+                <p class="info">Słońce długo było uznawane przez astronomów za małą i stosunkowo niewyróżniającą się gwiazdę. Jednak w 2006 roku oceniano, że jest jaśniejsze niż około 85% gwiazd w Drodze Mlecznej, z których większość jest czerwonymi karłami. Badania z 2010 roku pozwalają skorygować tę wartość na 95%. Absolutna wielkość gwiazdowa Słońca wynosi 4,83m, jednak jako gwiazda położona najbliżej Ziemi Słońce jest najjaśniejszym obiektem na niebie o obserwowanej wielkości gwiazdowej równej –26,74m. Jest przez to około 13 mld razy jaśniejsze niż następna co do jasności gwiazda, Syriusz, o jasności wizualnej –1,46m. Gorąca korona słoneczna stale rozprasza się w przestrzeni, tworząc wiatr słoneczny, strumień naładowanych cząstek, który rozciąga się do heliopauzy położonej około 100 jednostek astronomicznych od gwiazdy. Heliosfera, bańka w ośrodku międzygwiazdowym utworzona przez wiatr słoneczny, jest największą ciągłą strukturą w Układzie Słonecznym.</p>
+                <br>
+                <p class="info">Słońce obecnie przemieszcza się przez Lokalny Obłok Międzygwiazdowy (w pobliżu Obłoku G) w obrębie Bąbla Lokalnego, w wewnętrznej części Ramienia Oriona w galaktyce Drogi Mlecznej. Z 50 najbliższych znanych systemów gwiezdnych w promieniu 17 lat świetlnych od Ziemi Słońce zajmuje czwartą pozycję pod względem masy. Gwiazdą znajdującą się najbliżej Słońca jest czerwony karzeł Proxima Centauri, odległy o 4,2 roku świetlnego. Słońce krąży wokół centrum Drogi Mlecznej w odległości około 8 kpc (26 000 lat świetlnych), zgodnie z kierunkiem ruchu wskazówek zegara (patrząc od strony galaktycznego bieguna północnego), z okresem obiegu około 225–250 mln lat. Jako że Droga Mleczna porusza się względem promieniowania tła (CMB) w kierunku konstelacji Hydry z prędkością 550 km/s, wypadkowa prędkość Słońca względem CMB to około 370 km/s w kierunku gwiazdozbioru Pucharu lub Lwa.</p>
+
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="merkury">
+                <img src="Zdjecia/mercuryGIF2.gif" alt="GIF Merkurego" class="infoZdjecia">
+                <p class="info">Merkury – najmniejsza i najbliższa Słońca planeta Układu Słonecznego. Jako planeta dolna znajduje się dla ziemskiego obserwatora zawsze blisko Słońca, dlatego jest trudna do obserwacji. Mimo to należy do planet widocznych gołym okiem i była znana już w starożytności. Merkurego dojrzeć można jedynie tuż przed wschodem lub tuż po zachodzie Słońca.</p>
+                <br>
+                <p class="info">Ukształtowanie powierzchni Merkurego przypomina Księżyc: są na nim liczne kratery uderzeniowe i pozbawiony jest on atmosfery. Temperatura powierzchni waha się od −173 °C do 427 °C. W przeciwieństwie do Księżyca, planeta ma jednak duże żelazne jądro, generujące pole magnetyczne stukrotnie słabsze od ziemskiego. Rozmiar jądra sprawia, że Merkury ma jedną z największych gęstości spośród planet Układu Słonecznego (Ziemia ma nieznacznie większą gęstość). Merkury nie ma naturalnych satelitów.</p>
+                <br>
+                <p class="info">Pierwsze udokumentowane obserwacje Merkurego sięgają pierwszego tysiąclecia p.n.e. Starożytni Grecy początkowo uważali, że są to dwa ciała niebieskie: pierwsze widzialne tylko przed wschodem Słońca (nazywali je Apollo), drugie widzialne tylko po zachodzie Słońca (nazywali je Hermesem). Starożytni Egipcjanie, Chaldejczycy oraz późniejsi astronomowie greccy wiedzieli, że Merkury widoczny o poranku i wieczorem jest tą samą planetą. Było to znane Egipcjanom już około 1150 roku p.n.e. Za sprawą szybkiego ruchu planety, powodowanego jej krótką orbitą, Rzymianie nadali planecie nazwę na cześć posłańca bogów i patrona handlarzy – Merkurego. Symbol astronomiczny planety to stylizowana wersja kaduceusza Hermesa.</p>
+                <br>
+                <p class="info">W porównaniu z innymi planetami Układu Słonecznego o Merkurym wiadomo stosunkowo niewiele; ze względu na problemy natury technicznej zbadały go dotychczas tylko dwie sondy. Pierwsza z nich – Mariner 10 – w latach 1974–1975 trzykrotnie przeleciała obok Merkurego i wykonała mapy 45% powierzchni. Sonda MESSENGER w 2008 i 2009 roku dokonała trzech przelotów obok planety, po czym w latach 2011–2015 badała ją z orbity jako sztuczny satelita. Wystrzelona w 2018 roku sonda BepiColombo ma dotrzeć na orbitę wokół Merkurego w 2025 roku.</p>
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="wenus">
+                <img src="Zdjecia/venusGIF2.gif" alt="GIF Wenus" class="infoZdjecia">
+                <p class="info">Wenus – druga pod względem odległości od Słońca planeta Układu Słonecznego. Jest trzecim pod względem jasności ciałem niebieskim widocznym na niebie, po Słońcu i Księżycu. Jej obserwowana wielkość gwiazdowa sięga −4,6m. Ponieważ Wenus jest bliżej Słońca niż Ziemia, zawsze jest widoczna w niewielkiej odległości kątowej od niego; jej maksymalna elongacja to 47,8°. Odległość Wenus od Ziemi zmienia się w zakresie od około 40 mln km do około 259 mln km.</p>
+                <br>
+                <p class="info">Nazwa planety wzięła się od rzymskiej bogini miłości, Wenus. Na niebie planeta jest widoczna przez około trzy godziny przed wschodem Słońca nad wschodnim horyzontem lub po zachodzie Słońca nad zachodnim horyzontem. Nieodłączna towarzyszka wschodzącego i zachodzącego Słońca, nazywana jest także Gwiazdą Poranną (Zaranną, Porankową) lub Jutrzenką (łac. Stella Matutina), kiedy zwiastuje wschód Słońca, albo Gwiazdą Wieczorną, która finalizuje jego zachód.</p>
+                <br>
+                <p class="info">Wenus jest klasyfikowana jako planeta skalista (inaczej: typu ziemskiego) i jest czasami nazywana „planetą bliźniaczą” albo „siostrą Ziemi” – ze względu na podobną wielkość, masę i skład chemiczny. Atmosfera Wenus jest jednak zupełnie odmienna od ziemskiej. Jest pokryta nieprzezroczystą warstwą dobrze odbijających światło chmur kwasu siarkowego, które nie pozwalają na obserwację jej powierzchni z kosmosu w świetle widzialnym. Ma najgęstszą atmosferę ze wszystkich planet skalistych w Układzie Słonecznym, składającą się głównie z dwutlenku węgla. Na Wenus nie ma obiegu węgla, który powodowałby wiązanie węgla w skałach. Nie stwierdzono na niej również śladów organizmów żywych, które by go wiązały w biomasie. Istnieją przypuszczenia, że w przeszłości na Wenus były oceany, tak jak na Ziemi, ale odparowały, gdy temperatura powierzchni wzrosła. Obecny krajobraz Wenus jest suchy i pustynny, tworzony przez pokryte pyłem skały. Woda w atmosferze najprawdopodobniej dysocjowała, a z powodu braku pola magnetycznego, wodór został wywiany w przestrzeń międzyplanetarną przez wiatr słoneczny. Ciśnienie atmosferyczne na powierzchni planety jest około 92 razy większe niż na Ziemi.</p>
+                <br>
+                <p class="info">Ukształtowanie powierzchni Wenus było przedmiotem spekulacji aż do drugiej połowy XX wieku, gdy zostało zbadane przez sondy Wenera i Magellan. Powierzchnia Wenus została ukształtowana przez zjawiska wulkaniczne, zachodzące w skali znacznie większej niż na Ziemi, a duże stężenie związków siarki w atmosferze wskazuje na trwającą ciągle aktywność wulkaniczną. Jednak brak obserwowanych przepływów lawy w okolicach odkrytych kalder pozostaje zagadką. Jest niewiele widocznych kraterów uderzeniowych, co wskazuje, że powierzchnia jest stosunkowo młoda – ma około 300–600 mln lat. Nie ma tektoniki płyt, prawdopodobnie dlatego, że jej skorupa jest zbyt sztywna.</p>
+
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="ziemia">
+                <img src="Zdjecia/earthGIF.gif" alt="GIF Ziemii" class="infoZdjecia">
+                <p class="info">Ziemia – trzecia, licząc od Słońca, oraz piąta pod względem wielkości planeta Układu Słonecznego. Pod względem średnicy, masy i gęstości jest to największa planeta skalista Układu Słonecznego. Ziemia jest zamieszkana przez miliony gatunków, w tym przez człowieka. Jest jedynym znanym miejscem we Wszechświecie, w którym występuje życie. Według danych zebranych metodą datowania izotopowego, planeta uformowała się ok. 4,54 ± 0,05 mld lat temu.</p>
+                <br>
+                <p class="info">Prawdopodobnie w ciągu pierwszego miliarda lat po uformowaniu się Ziemi w oceanach pojawiło się życie. Z żyjących na Ziemi organizmów żywych składa się biosfera, która wpływa na jej atmosferę, hydrosferę, litosferę i inne czynniki abiotyczne planety, umożliwiając rozwój i wzrost liczby organizmów aerobowych i anaerobowych oraz powstanie ozonosfery. Rozwój życia na lądzie i w wodzie umożliwiła powłoka ozonowa oraz ziemskie pole magnetyczne, zmniejszając natężenie promieniowania ultrafioletowego, oraz magnetosfera, odbijająca cząstki wiatru słonecznego i promieniowania kosmicznego. Dystans dzielący Słońce od Ziemi, jej właściwości fizyczne oraz jej historia geologiczna są najważniejszymi czynnikami, które pozwoliły organizmom żyć i ewoluować. Różnorodność biologiczna Ziemi nieustannie powiększa się, chociaż w dziejach życia Ziemi proces ten był kilkukrotnie przerywany, kiedy miało miejsce masowe wymieranie gatunków. Pomimo że naukowcy szacują, że ok. 99% gatunków organizmów żywych (ok. 5 mld) kiedykolwiek zamieszkujących Ziemię uważa się za wymarłe, wciąż mieszka na niej ok. 10–14 mln gatunków, z czego 1,2 mln zostało udokumentowanych.</p>
+                <br>
+                <p class="info">Litosfera Ziemi dzieli się na kilkanaście płyt tektonicznych, które przesuwają się względem siebie w ciągu okresów trwających nawet przez wiele milionów lat. W ich trakcie dochodzi do znacznej zmiany położenia kontynentów. Powierzchnię w 70,8% zajmuje woda wszechoceanu zawarta w morzach i oceanach; pozostałe 29,2% stanowią kontynenty i wyspy, na powierzchni których znajdują się jeziora oraz inne źródła wody tworzące hydrosferę. Niezbędnej do życia na Ziemi wody w stanie ciekłym nie wykryto na powierzchni innych ciał niebieskich. Wnętrze Ziemi pozostaje aktywne; składa się z grubego i w dużej mierze stałego płaszcza, płynnego jądra zewnętrznego (generującego pole magnetyczne) oraz składającego się z żelaza stałego jądra wewnętrznego. Strefy podbiegunowe Ziemi są pokryte lodem wchodzącym w skład pokrywy lodowej Antarktydy (biegun południowy), pokrywy lodowej Grenlandii i lodu morskiego, w tym arktycznego paku lodowego (biegun północny).</p>
+                <br>
+                <p class="info">Ziemia oddziałuje grawitacyjnie z innymi ciałami w przestrzeni kosmicznej, zwłaszcza ze Słońcem i Księżycem. Planeta wykonuje jedno okrążenie wokół Słońca raz na każde 365,256 obrotów wokół własnej osi. Czas jednego okrążenia wokół Słońca nazywa się rokiem gwiazdowym i odpowiada 365,256 dniom czasu słonecznego. Nachylenie osi Ziemi do prostej prostopadłej do płaszczyzny orbity wynosi 23,44°, co prowadzi do rocznych wahań oświetlenia, które powodują m.in. występowanie na jej powierzchni pór roku, które tworzą rok zwrotnikowy. Wokół Ziemi krąży jeden naturalny satelita – Księżyc. Jego oddziaływanie grawitacyjne na Ziemię wywołuje pływy morskie, spowalnia jej rotację oraz stabilizuje kąt nachylenia osi obrotu względem orbity. Przypuszcza się, że orbituje on wokół Ziemi od ok. 4,53 mld lat. Bombardowanie przez komety we wczesnej historii Ziemi przyczyniło się do powstania oceanów, a upadki pojedynczych planetoid mogły prowadzić do niektórych masowych wymierań.</p>
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="mars">
+                <img src="Zdjecia/marsGIF.gif" alt="GIF Marsa" class="infoZdjecia">
+                <p class="info">Mars – czwarta od Słońca planeta Układu Słonecznego. Krąży między orbitą Ziemi a pasem planetoid, dzielącym go od orbity Jowisza. Planeta została nazwana od imienia rzymskiego boga wojny – Marsa, zawdzięcza ją barwie, która przy obserwacji z Ziemi wydaje się rdzawo-czerwona i kojarzyła się starożytnym Rzymianom z pożogą wojenną. Odcień ten bierze się od tlenków żelaza pokrywających powierzchnię. Mars jest planetą wewnętrzną z cienką atmosferą, o powierzchni usianej kraterami uderzeniowymi, podobnie jak powierzchnia Księżyca i wielu innych ciał Układu Słonecznego. Występują na nim różne rodzaje terenu, podobne do ziemskich: wulkany, doliny, kaniony, pustynie i polarne czapy lodowe. Okres obrotu wokół własnej osi jest niewiele dłuższy niż ziemski i wynosi 24,6229 godziny (24 h 37 m 22 s). Na Marsie znajduje się najwyższy wulkan w Układzie Słonecznym – Olympus Mons i największy kanion – Valles Marineris. Gładki obszar równinny Vastitas Borealis na półkuli północnej, który obejmuje 40% powierzchni planety, może być pozostałością ogromnego uderzenia[2]. W przeciwieństwie do Ziemi, Mars jest mało aktywny geologicznie i nie ma tektoniki płyt.</p>
+                <br>
+                <p class="info">Do czasu pierwszego przelotu sondy Mariner 4 obok Marsa w 1965 roku spekulowano na temat obecności ciekłej wody na powierzchni planety. Podstawą spekulacji były obserwowane okresowe zmiany jasności obszarów powierzchni, w szczególności w pobliżu biegunów, które w obserwacjach teleskopowych wydawały się morzami i kontynentami. Długie ciemne linie na powierzchni, nazwane kanałami marsjańskimi, były interpretowane przez niektórych jako kanały nawadniające wybudowane przez istoty rozumne. Ich obserwacje wytłumaczono później złudzeniem optycznym, ale spośród planet Układu Słonecznego poza Ziemią, występowanie na Marsie wody, a tym samym warunków do życia, jest wciąż najbardziej prawdopodobne. Badania geologiczne zebrane przez bezzałogowe misje sugerują, że Mars miał kiedyś duże zasoby wody powierzchniowej, a małe wypływy wód podobne do gejzerów mogły występować w ciągu ostatniej dekady. W roku 2005 dane radarowe wykazały obecność dużych ilości lodu zarówno na biegunach, jak i na średnich szerokościach geograficznych. Lądownik Phoenix 31 lipca 2008 roku stwierdził bezpośrednio obecność wody w próbce regolitu pobranej w okolicach biegunowych. 28 września 2015 roku NASA ogłosiła, że znaleziono dowody na obecność ciekłej słonej wody na powierzchni. W miesiącach letnich woda w stanie ciekłym spływa ze zboczy kanionów i ścian kraterów w postaci strug i pozostawia ciemne plamy, które mogą mieć długość do kilkuset metrów. Badacze uważają, że odkrycie to zwiększa prawdopodobieństwo istnienia życia na Marsie.</p>
+                <br>
+                <p class="info">Mars ma dwa księżyce, Fobosa i Deimosa, które są małe i mają nieregularny kształt. Prawdopodobnie powstały z materii wyrzuconej z Marsa w wyniku wielkich uderzeń w początkach istnienia planety. Mars ma także planetoidy trojańskie, takie jak (5261) Eureka, krążące w pobliżu punktów równowagi grawitacyjnej na orbicie planety wokół Słońca. Wokół Marsa krąży osiem sztucznych satelitów, 2001 Mars Odyssey, Mars Express, Mars Reconnaissance Orbiter, Mars Orbiter Mission, MAVEN, ExoMars Trace Gas Orbiter, Al Amal i Tianwen-1. Na powierzchni znajdują się aktywne łaziki Curiosity, Perseverance i Zhurong, lądownik InSight oraz kilka nieczynnych łazików i lądowników z zarówno udanych, jak i nieudanych misji (stan na maj 2021).
+                </p>
+                <br>
+                <p class="info">Mars może być łatwo dostrzeżony z Ziemi gołym okiem. W wielkiej opozycji względem Słońca, jego jasność osiąga −2,91 magnitudo; jasnością przewyższają go wówczas tylko Jowisz, Wenus, Księżyc oraz Słońce.</p>
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="jowisz">
+                <img src="Zdjecia/jupiterGIF.gif" alt="GIF Jowisza" class="infoZdjecia">
+                <p class="info">Jowisz – gazowy olbrzym, największa planeta Układu Słonecznego. Piąta planeta w kolejności od Słońca. Masa Jowisza jest nieco mniejsza niż jedna tysięczna masy Słońca, a zarazem dwa i pół razy większa niż łączna masa pozostałych planet w Układzie Słonecznym. Wraz z Saturnem, Uranem i Neptunem tworzą grupę gazowych olbrzymów, nazywaną czasem również planetami jowiszowymi.</p>
+                <br>
+                <p class="info">Planetę znali astronomowie w czasach starożytnych, była związana z mitologią i wierzeniami religijnymi wielu kultur. Rzymianie nazwali planetę na cześć najważniejszego bóstwa swojej mitologii – Jowisza. Obserwowany z Ziemi Jowisz może osiągnąć jasność do −2,95m. Jest to trzeci co do jasności naturalny obiekt na nocnym niebie po Księżycu i Wenus (okresowo, w momencie wielkiej opozycji, jasnością może mu dorównywać Mars).</p>
+                <br>
+                <p class="info">Największa planeta Układu Słonecznego składa się w trzech czwartych z wodoru i w jednej czwartej z helu; może posiadać także skaliste jądro złożone z cięższych pierwiastków. Szybka rotacja nadaje mu kształt spłaszczonej elipsoidy obrotowej (ma też niewielkie, ale zauważalne zgrubienie w płaszczyźnie równika). Powierzchnię planety, którą stanowią nieprzezroczyste wyższe warstwy atmosfery, pokrywa kilka warstw chmur, układających się w charakterystyczne pasy widoczne z Ziemi. Najbardziej znanym szczegółem jego powierzchni jest odkryta w XVII wieku przy pomocy teleskopu Wielka Czerwona Plama, będąca antycyklonem o średnicy większej niż średnica Ziemi. Planeta ma słabo widoczne pierścienie i potężną magnetosferę. Okrążają ją cztery wielkie, kuliste księżyce zwane galileuszowymi, które odkrył Galileusz w 1610. Ganimedes, największy z księżyców, ma średnicę większą niż planeta Merkury. Ogółem są znane 95 księżyce Jowisza.</p>
+                <br>
+                <p class="info">Planeta była wielokrotnie badana przez sondy, zwłaszcza na początku programu Pioneer i programu Voyager, a następnie przez sondę Galileo. Od lipca 2016 roku na orbicie dookoła planety znajduje się sonda kosmiczna Juno, która miała okrążać ją i badać do lipca 2021, misję sondy przedłużono do września 2025.</p>
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="saturn">
+                <img src="Zdjecia/saturnGIF.gif" alt="GIF Saturna" class="infoZdjecia">
+                <p class="info">Saturn – gazowy olbrzym, szósta planeta Układu Słonecznego pod względem odległości od Słońca, druga po Jowiszu pod względem masy i wielkości. Charakterystyczną jego cechą są pierścienie, składające się głównie z lodu i w mniejszej ilości z odłamków skalnych; inne planety-olbrzymy także mają systemy pierścieni, ale żaden z nich nie jest tak rozległy ani tak jasny. W maju 2023 roku znanych było 146 naturalnych satelitów Saturna, najwięcej wśród planet.</p>
+                <br>
+                <p class="info">Promień Saturna jest około 9 razy większy od promienia Ziemi. Chociaż jego gęstość to tylko jedna ósma średniej gęstości Ziemi, ze względu na wielokrotnie większą objętość masa Saturna jest dziewięćdziesiąt pięć razy większa niż masa Ziemi.</p>
+                <br>
+                <p class="info">We wnętrzu Saturna panują wysokie ciśnienie i temperatura. Wnętrze gazowego olbrzyma najprawdopodobniej składa się z jądra z żelaza, niklu, krzemu i tlenu, otoczonego warstwą metalicznego wodoru, warstwy pośredniej ciekłego wodoru i ciekłego helu oraz zewnętrznej warstwy gazowej. Prąd elektryczny w warstwie metalicznej wodoru generuje pole magnetyczne Saturna, które jest nieco słabsze niż pole magnetyczne Ziemi i ma około jedną dwudziestą natężenia pola wokół Jowisza. Zewnętrzna warstwa atmosfery wydaje się na ogół spokojna, choć mogą się na niej utrzymywać długotrwałe układy burzowe. Na Saturnie wieją wiatry o prędkości ok. 1800 km/h; są one silniejsze niż na Jowiszu.</p>
+                <br>
+                <p class="info">Saturn ma 9 pierścieni, składających się głównie z cząsteczek lodu, a także ze skał i pyłu kosmicznego. Potwierdzono odkrycie 146 księżyców krążących wokół planety, spośród których 63 mają oficjalne nazwy. Do tego dochodzą setki „księżyców karłowatych” w pierścieniach planetarnych. Tytan to drugi co do wielkości księżyc w Układzie Słonecznym (po księżycu Jowisza Ganimedesie), jest większy od planety Merkury i jest jedynym księżycem w Układzie Słonecznym posiadającym gęstą atmosferę.</p>
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="uran">
+                <img src="Zdjecia/uranusGIF.gif" alt="GIF Uranu" class="infoZdjecia">
+                <p class="info">Uran − gazowy olbrzym, siódma od Słońca planeta Układu Słonecznego, trzecia pod względem wielkości i czwarta pod względem masy. Nazwa planety pochodzi od Uranosa, greckiego boga, uosobienia nieba (klasyczna greka: Οὐρανός), ojca Kronosa (Saturna) i dziada Zeusa (Jowisza). Choć jest widoczny gołym okiem podobnie jak pięć innych planet, umknął uwadze starożytnych obserwatorów z powodu małej jasności i powolnego ruchu po sferze niebieskiej. William Herschel ogłosił odkrycie planety 13 marca 1781, po raz pierwszy w historii rozszerzając znane granice Układu Słonecznego. Uran to również pierwsza planeta odkryta przy pomocy teleskopu.</p>
+                <br>
+                <p class="info">Uran budową i składem chemicznym przypomina Neptuna, a obie planety mają odmienną budowę i skład niż większe gazowe olbrzymy: Jowisz i Saturn. Astronomowie czasem umieszczają je w oddzielnej kategorii „lodowych olbrzymów”. Atmosfera Urana, chociaż składa się głównie z wodoru i helu (podobnie jak atmosfery Jowisza i Saturna), zawiera więcej zamrożonych substancji lotnych (tzw. lodów) niż atmosfery większych planet-olbrzymów; są to substancje takie jak woda, amoniak i metan oraz śladowe ilości węglowodorów. Jest najzimniejszą atmosferą planetarną w Układzie Słonecznym; minimalna temperatura to 49 K (−224 °C). Ma ona złożoną, warstwową strukturę. Uważa się, że jej najniższe chmury tworzy woda, a najwyższa warstwa chmur jest utworzona z kryształków metanu. Z kolei wnętrze Urana składa się głównie z lodów i skał.</p>
+                <br>
+                <p class="info">Podobnie jak inne planety-olbrzymy, Uran posiada system pierścieni, magnetosferę i liczne księżyce. System Urana ma unikatową konfigurację wśród planet, ponieważ jego oś obrotu jest silnie nachylona i znajduje się prawie w płaszczyźnie orbity planety. W tej sytuacji jego biegun północny i południowy leżą tam, gdzie równik większości innych planet. Widziane z Ziemi pierścienie Urana czasami układają się wokół planety jak tarcza łucznicza, zaś księżyce planety krążą wokół niej jak wskazówki zegara, choć w 2007 i 2008 pierścienie planety były ustawione krawędzią do osi obserwacji. W 1986 obrazy z sondy Voyager 2 pokazały Urana jako planetę praktycznie pozbawioną wyróżniających się cech powierzchni w świetle widzialnym, bez pasm chmur i burz podobnych do istniejących na pozostałych planetach-olbrzymach. Jednak w ostatnich latach obserwacje prowadzone z Ziemi ukazały oznaki zmian pór roku i zwiększonej aktywności zjawisk pogodowych, gdy Uran zbliżył się do równonocy. Prędkość wiatru na Uranie może osiągnąć 250 metrów na sekundę (900 km/h).</p>
+
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="neptun">
+                <img src="Zdjecia/neptuneGIF.gif" alt="GIF Neptuna" class="infoZdjecia">
+                <p class="info">Neptun – gazowy olbrzym, ósma, najdalsza planeta w Układzie Słonecznym, czwarta pod względem średnicy i trzecia pod względem masy. Neptun jest ponad 17 razy masywniejszy od Ziemi i masywniejszy od swojego "bliźniaka" Urana, który ma masę prawie 15 razy większą od masy Ziemi. Krąży wokół Słońca w odległości około 30 razy większej niż dystans Ziemia-Słońce. Nazwa pochodzi od rzymskiego boga mórz Neptuna. Jego symbol astronomiczny to , stylizowany trójząb Neptuna.</p>
+                <br>
+                <p class="info">Odkryty 23 września 1846 Neptun jest jedyną planetą Układu Słonecznego, której istnienie wykazano nie na podstawie obserwacji nieba, ale na drodze obliczeń matematycznych. Niespodziewane zmiany w ruchu orbitalnym Urana doprowadziły astronomów do wniosku, że podlega on perturbacjom pochodzącym od nieznanej planety. Neptun został następnie zaobserwowany przez Johanna Galla w miejscu przewidzianym przez Urbaina Le Verriera, a wkrótce został też odkryty jego największy księżyc, Tryton; żaden z pozostałych 13 znanych dziś księżyców Neptuna nie został odkryty za pomocą teleskopu aż do XX wieku. Neptun został odwiedzony przez tylko jedną sondę kosmiczną, Voyager 2, która przeleciała w pobliżu planety 25 sierpnia 1989.</p>
+                <br>
+                <p class="info">Neptun przypomina składem Urana, co odróżnia je od większych gazowych olbrzymów, Jowisza i Saturna. Atmosfera Neptuna, choć – podobnie jak na Jowiszu i Saturnie – składa się głównie z wodoru i helu wraz ze śladami węglowodorów i prawdopodobnie azotu, zawiera większą ilość tzw. „lodów”, czyli substancji lotnych w warunkach ziemskich, takich jak woda, amoniak i metan. Astronomowie czasami kategoryzują Urana i Neptuna jako „lodowe olbrzymy” w celu podkreślenia tych różnic. Wnętrze Neptuna, podobnie jak Urana, składa się głównie z lodów i skał. Ślady metanu w zewnętrznych obszarach planety przyczyniają się do nadania jej charakterystycznego niebieskiego koloru.</p>
+                <br>
+                <p class="info">W przeciwieństwie do niemal pozbawionej wyróżniających się struktur atmosfery Urana, atmosferę Neptuna cechuje aktywność i widoczne układy pogodowe. Podczas przelotu w 1989 roku Voyager 2 odkrył na półkuli południowej Wielką Ciemną Plamę, porównywalną z Wielką Czerwoną Plamą na Jowiszu. Takie struktury są napędzane przez najsilniejsze wiatry w Układzie Słonecznym; rekord prędkości wiatru to aż 2100 km/h. Duża odległość od Słońca powoduje, że zewnętrzna atmosfera Neptuna jest jednym z najzimniejszych miejsc w Układzie Słonecznym; temperatura efektywna widocznej „powierzchni” planety to około −226,5 °C (46,6 K). Jednak w centrum planety temperatura sięga około 5100 °C.</p>
+                <br>
+                <p class="info">Neptun ma słaby i pozornie niekompletny system pierścieni. Pierwsze sygnały o istnieniu tych struktur pochodzą z lat 60. XX w., ale dopiero w 1989 roku sonda Voyager 2 bezsprzecznie potwierdziła ich istnienie.</p>
+            </section>
+
+            <section class="sekcja_main_prawy_div" id="pluton">
+                <img src="Zdjecia/plutoGIF.gif" alt="GIF Plutona" class="infoZdjecia">
+                <p class="info">Pluton (oznaczenie oficjalne: (134340) Pluton) – planeta karłowata, plutoid, najjaśniejszy obiekt Pasa Kuipera. Został odkryty w 1930 roku przez amerykańskiego astronoma Clyde’a Tombaugha. Od odkrycia do 2006 roku Pluton oficjalnie był uznawany za dziewiątą planetę Układu Słonecznego. 24 sierpnia 2006 roku Międzynarodowa Unia Astronomiczna odebrała Plutonowi status planety, co oznacza, że Układ Słoneczny składa się z 8 planet.</p>
+                <br>
+                <p class="info">Pluton należy do szerszej grupy obiektów transneptunowych. Płaszczyzna, po której się porusza, jest mocno nachylona do płaszczyzny ekliptyki, z silnie ekscentryczną orbitą, która częściowo przebiega bliżej Słońca niż orbita Neptuna. Plutona obiega co najmniej pięć księżyców, z których jeden, Charon, ma tylko o połowę mniejszą średnicę od niego.</p>
+                <br>
+                <p class="info">Jeszcze na długo przed odkryciem Plutona astronomowie przewidywali istnienie dużego ciała, krążącego poza orbitą Neptuna. Postawiono hipotezę, że za zaburzenia w ruchu Neptuna odpowiada niezaobserwowana planeta (Planeta X). Dopiero badania sondy Voyager 2 pozwoliły rozwiązać zagadkę zaburzeń. Okazało się, że masa Neptuna została przeszacowana o około 0,5%. Uwzględnienie tej różnicy sprawiło, że zaburzenia zniknęły – zatem Planeta X, tak jak ją zdefiniował Percival Lowell, nie istnieje.</p>
+                <br>
+                <p class="info">Pluton został odkryty 18 lutego 1930 roku przez amerykańskiego astronoma, Clyde’a Tombaugha, pracującego w Lowell Observatory w Arizonie. Obiekt został przez niego zauważony na zdjęciach zrobionych między 23 a 29 stycznia tegoż roku. Po uzyskaniu fotograficznego potwierdzenia, 13 marca wysłał telegraficzną wiadomość do Obserwatorium Harvard College. W późniejszym czasie zdjęcia jeszcze z 1915 roku potwierdziły istnienie nowego obiektu.</p>
+                <br>
+                <p class="info">W sprawie nazewnictwa obiektu pierwszeństwo miał jego odkrywca. Przełożeni skłaniali Tombaugha do szybkiego zaproponowania nazwy, zanim ktoś inny go uprzedzi. Wkrótce propozycje zaczęły nadchodzić niemal z całego świata. Constance Lowell, wdowa po Percivalu (założycielu obserwatorium, w którym odkryto Plutona), zaproponowała nazwę Zeus. Ostatecznie, w wyniku impasu w tej sprawie, wdowa Lowell zaproponowała jako nazwę swoje pierwsze imię, co spotkało się z dużą dezaprobatą środowisk astronomicznych.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Stronę wykonał: Krzysztof Gołuchowski</p>
+        </footer>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
