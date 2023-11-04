@@ -1,0 +1,376 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("Zdjecia/tlo3.jpg");
+    background-size: 100%;
+}
+
+header{
+    color: white;
+    text-align:center;
+    text-shadow: #ffa011 0.1em 0.1em 0.1em;
+    margin: auto;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    cursor: default;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+.przyciskStronaGlowna{
+    height: auto;
+    width: auto;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+/*MAIN SECTION*/
+main{
+    height: 80%;
+    width: 100%;
+    color: black;
+    display: flex;
+}
+
+.sekcja_main_lewy_div{
+    flex: 2;
+    text-align: center;
+    color: #DDDDDD;
+    text-shadow: Black 0.2em 0.2em 0.2em;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.sekcja_main_prawy_div{
+    padding: 15px;
+    flex: 8;
+    height: 100%;
+    text-align: center;
+    color: #DDDDDD;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.zdjeciaGlowna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.zdjeciaGlowna > img{
+    height: 700px;
+    width: 700px;
+}
+
+.sekcja_main_prawy_div > p{
+    height: auto;
+}
+
+footer{
+    color: #d5b98b;
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.sun{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 44%;
+    left: 1%;
+    height: 36%;
+    width: 18%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.sun:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    position: absolute;
+    top: 42%;
+    left: 0%;
+    height: 40%;
+    width: 20%;
+}
+
+.mercury{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 58.5%;
+    left: 19%;
+    height: 6%;
+    width: 3%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.mercury:hover {
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    height: 14%;
+    width: 7%;
+}
+
+.venus{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 55.5%;
+    left: 23.5%;
+    height: 12%;
+    width: 6%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.venus:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 52%;
+    left: 21.5%;
+    height: 20%;
+    width: 10%;
+}
+
+.earth{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 54%;
+    left: 31%;
+    height: 14%;
+    width: 7%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.earth:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 50.5%;
+    left: 29.3%;
+    height: 22%;
+    width: 11%;
+}
+
+.mars{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 55%;
+    left: 39.5%;
+    height: 12%;
+    width: 6%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.mars:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 52.8%;
+    left: 38.25%;
+    height: 18%;
+    width: 9%;
+}
+
+.jupiter{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 48.4%;
+    left: 47%;
+    height: 26%;
+    width: 13%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.jupiter:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 44%;
+    left: 45%;
+    height: 36%;
+    width: 17%;
+}
+
+.saturn{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 52%;
+    left: 61%;
+    height: 20%;
+    width: 13%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.saturn:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 47%;
+    left: 59%;
+    height: 30%;
+    width: 18%;
+}
+.uranus{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 53.5%;
+    left: 75.75%;
+    height: 16%;
+    width: 8%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.uranus:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 51.5%;
+    left: 74.3%;
+    height: 22%;
+    width: 11%;
+}
+.neptune{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 54%;
+    left: 85.5%;
+    height: 14%;
+    width: 7%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.neptune:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 52%;
+    left: 83.8%;
+    height: 20%;
+    width: 10%;
+}
+
+.pluto{
+    position: absolute;
+    transition-duration: 500ms;
+    top: 58.2%;
+    left: 94.3%;
+    height: 6%;
+    width: 3%;
+    opacity: 1;
+    border-radius: 100%;
+}
+.pluto:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    opacity: 0.6;
+    top: 57%;
+    left: 93.5%;
+    height: 10%;
+    width: 5%;
+}
+.napisMenu{
+    font-size: 100px;
+    opacity: 0;
+    position: absolute;
+    cursor: default;
+    /*width: auto;*/
+}
+#index{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.infoZdjecia{
+    height: 50%;
+    width: 24%;
+    float: left;
+    margin-right: 20px;
+}
+.info{
+    text-align: justify;
+    width: auto;
+}
+input{
+    height: auto;
+    width: auto;
+}
+
+form > p{
+    height: auto;
+    width: auto;
+}
+
+button{
+    height: auto;
+    width: auto;
+}
+.correct {
+    background-color: green;
+    color: white;
+}
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+
+@media only screen and (max-width: 700px) {
+    body{
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    header > p{
+        font-size: large;
+        width: auto;
+        height: auto;
+    }
+
+    .sun, .mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune, .pluto{
+        position: static;
+        height: 200px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sun:hover, .mercury:hover, .venus:hover, .earth:hover, .mars:hover, .jupiter:hover, .saturn:hover, .uranus:hover, .neptune:hover, .pluto:hover{
+        position: static;
+        height: 200px;
+        width: 200px;
+    }
+
+    .sekcja_main_prawy_div{
+        height: 2050px;
+        overflow: auto;
+    }
+
+    footer{
+        clear: both;
+        position: fixed;
+        width: 100%;
+    }
+    .infoZdjecia{
+        display: none;
+    }
+    .napisMenu{
+        display: none;
+    }
+}
